@@ -8,98 +8,140 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: #f4f7fa;
+      color: #343a40;
     }
     header {
-      background-color: #007bff;
+      background: linear-gradient(to right, #007bff, #0056b3);
       color: white;
-      padding: 40px 0;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    .nav-section {
+      background-color: #ffffff;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .nav-section a {
+      color: #007bff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
     }
     .section-title {
-      margin-top: 40px;
+      margin-top: 60px;
       margin-bottom: 20px;
+      padding-bottom: 10px;
       border-bottom: 2px solid #007bff;
       display: inline-block;
     }
     .card {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      border-left: 5px solid #007bff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
       padding: 20px 0;
-      background-color: #e9ecef;
-      margin-top: 40px;
+      background-color: #f1f3f5;
+      color: #6c757d;
+      margin-top: 60px;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-<header class="text-center">
+<header>
   <h1>Deepanshu Garg</h1>
   <p>Software Developer | .NET Core | ASP.NET | JavaScript | SQL</p>
-  <p>Email: <a href="mailto:deepanshugarg855@gmail.com" class="text-white">deepanshugarg855@gmail.com</a> | Phone: 7983076511 | New Delhi, India</p>
 </header>
 
-<div class="container mt-4">
+<nav class="nav-section py-2 text-center sticky-top shadow-sm">
+  <a href="#summary" class="nav-link d-inline">Summary</a>
+  <a href="#skills" class="nav-link d-inline">Skills</a>
+  <a href="#experience" class="nav-link d-inline">Experience</a>
+  <a href="#education" class="nav-link d-inline">Education</a>
+  <a href="#hobbies" class="nav-link d-inline">Hobbies</a>
+  <a href="#contact" class="nav-link d-inline">Contact</a>
+</nav>
 
-  <h2 class="section-title">Professional Summary</h2>
-  <p>Experienced in developing real-life projects using .NET Core, ASP.NET, MySQL & SQL Server. Skilled in designing databases, resolving bugs, and front-end development with strong involvement in presentation layer design.</p>
+<div class="container">
 
-  <h2 class="section-title">Skills</h2>
-  <div class="row">
-    <div class="col-md-4"><strong>Coding Languages:</strong> C#</div>
-    <div class="col-md-4"><strong>Server-Side:</strong> ASP.NET, .NET Core 6.0, Entity Framework</div>
-    <div class="col-md-4"><strong>.NET Framework:</strong> 4.0 and above</div>
-    <div class="col-md-4"><strong>Client-Side:</strong> JavaScript, JQuery</div>
-    <div class="col-md-4"><strong>Web Tech:</strong> HTML, CSS, Bootstrap, AJAX</div>
-    <div class="col-md-4"><strong>Databases:</strong> MySQL, MS SQL Server</div>
-    <div class="col-md-4"><strong>Others:</strong> GitHub</div>
-  </div>
+  <section id="summary">
+    <h2 class="section-title">Professional Summary</h2>
+    <p>3.5 years of experience in developing real-life software applications using .NET Core, ASP.NET, SQL Server, and JavaScript. Strong in both backend logic and front-end UI development. Known for writing clean code, debugging, and improving performance.</p>
+  </section>
 
-  <h2 class="section-title">Work Experience</h2>
-
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Software Developer - Webtel Electrosoft Ltd</h5>
-      <h6 class="card-subtitle mb-2 text-muted">New Delhi | 11/2023 – Present</h6>
-      <p><strong>Project:</strong> Web-e-tax (E-Tax Payment & Filing)</p>
-      <ul>
-        <li>Developed and maintained core application functionality.</li>
-        <li>Collaborated with teams to define timelines and resources.</li>
-        <li>Prepared detailed documentation and participated in deployments.</li>
-        <li>Organized meetings and helped in testing phases.</li>
-      </ul>
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="row mb-3">
+      <div class="col-md-4"><strong>Languages:</strong> C#, JavaScript</div>
+      <div class="col-md-4"><strong>Server Side:</strong> .NET Core, ASP.NET MVC, EF</div>
+      <div class="col-md-4"><strong>Frontend:</strong> HTML, CSS, Bootstrap, jQuery</div>
+      <div class="col-md-4"><strong>Databases:</strong> SQL Server, MySQL</div>
+      <div class="col-md-4"><strong>Tools:</strong> Git, Visual Studio</div>
+      <div class="col-md-4"><strong>Versioning:</strong> GitHub</div>
     </div>
-  </div>
+  </section>
 
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Software Developer - Itdose InfoSystem</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Noida | 01/2022 – 10/2023</h6>
-      <p><strong>Project 1:</strong> Laboratory Information Management System (LIMS)</p>
-      <ul>
-        <li>Developed core features for LIMS system.</li>
-        <li>Created manuals, user guides, and participated in team meetings.</li>
-        <li>Worked on debugging, unit testing, and documentation.</li>
-      </ul>
-      <p><strong>Project 2:</strong> Store Management System</p>
-      <ul>
-        <li>Designed inventory, billing, and reporting modules using ASP.NET & SQL Server.</li>
-        <li>Built role-based access controls and improved performance via optimized queries.</li>
-        <li>Led interface design using Bootstrap and JavaScript.</li>
-      </ul>
+  <section id="experience">
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Software Developer – Webtel Electrosoft Ltd</h5>
+        <h6 class="card-subtitle mb-2 text-muted">New Delhi | Nov 2023 – Present</h6>
+        <p><strong>Project:</strong> Web-e-tax (E-Tax Payment & Filing)</p>
+        <ul>
+          <li>Developed modules and dashboards for tax filing.</li>
+          <li>Led integration of APIs and testing automation.</li>
+          <li>Collaborated across departments and handled UAT support.</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <h2 class="section-title">Education</h2>
-  <p><strong>B.Tech</strong> – KIET Group of Institution, Ghaziabad (2017-2021)</p>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Software Developer – Itdose InfoSystem</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Noida | Jan 2022 – Oct 2023</h6>
+        <p><strong>Project 1:</strong> Laboratory Information Management System (LIMS)</p>
+        <ul>
+          <li>Developed modules for test management and patient records.</li>
+          <li>Enhanced security and optimized report generation.</li>
+        </ul>
+        <p><strong>Project 2:</strong> Store Management System</p>
+        <ul>
+          <li>Built billing and inventory modules with role-based access.</li>
+          <li>Boosted speed by optimizing SQL queries and backend logic.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2 class="section-title">Languages</h2>
-  <p>English, Hindi</p>
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <p><strong>B.Tech</strong> – KIET Group of Institutions, Ghaziabad (2017–2021)</p>
+  </section>
 
-  <h2 class="section-title">Hobbies</h2>
-  <p>Singing, Chess</p>
+  <section id="hobbies">
+    <h2 class="section-title">Languages & Hobbies</h2>
+    <p><strong>Languages:</strong> English, Hindi</p>
+    <p><strong>Hobbies:</strong> Singing, Chess</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:deepanshugarg855@gmail.com">deepanshugarg855@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91-7983076511</p>
+    <p><strong>Location:</strong> New Delhi, India</p>
+    <!-- <p><strong>Portfolio:</strong> <a href="https://deepanshugargdeveloper.github.io/WebPage/Portfolio.html" target="_blank">View Website</a></p> -->
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deepanshugargdeveloper" target="_blank">linkedin.com/in/deepanshugargdeveloper</a></p>
+  </section>
 
 </div>
 
